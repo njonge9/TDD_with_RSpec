@@ -54,6 +54,9 @@ group :development, :test do
 
   # Test Ruby code with RSpec [https://rspec.info/]
   gem "rspec-rails", "~> 7.1"
+
+  # Use shoulda-matchers for easy-to-read RSpec tests
+  gem "shoulda-matchers"
 end
 
 group :development do
