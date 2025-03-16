@@ -1,5 +1,7 @@
 require_relative "boot"
 
+require "factory_bot_rails"
+
 require "rails"
 # Pick the frameworks you want:
 require "active_model/railtie"
@@ -38,5 +40,11 @@ module BlogTddWithRSpec
 
     # Don't generate system test files.
     config.generators.system_tests = nil
+
+    # FactoryBot configuration
+    config.generators do |g|
+      g.test_framework :rspec, fixtures: true
+      g.fixture_replacement :factory_bot, dir: "spec/factories"
+    end
   end
 end
