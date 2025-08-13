@@ -53,7 +53,7 @@ group :development, :test do
   gem "rubocop-rails-omakase", require: false
 
   # Test Ruby code with RSpec [https://rspec.info/]
-  gem "rspec-rails", "~> 7.1"
+  gem "rspec-rails", "~> 8.0"
 
   # Use shoulda-matchers for easy-to-read RSpec tests
   gem "shoulda-matchers"
